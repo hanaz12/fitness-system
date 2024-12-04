@@ -1,0 +1,26 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Trainee extends Model
+{
+    use HasFactory;
+
+    protected $fillable = [
+        'username',
+        'password',
+        'email',
+        'phone',
+        'first_name',
+        'last_name',
+        'gender',
+        'age',
+        'height',
+        'weight',
+        'address',
+        'medical_history',
+    ];
+}

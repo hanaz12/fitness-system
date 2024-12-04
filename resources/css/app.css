@@ -1,0 +1,222 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+
+/* [x-cloak] {
+    display: none;
+} */
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: 400ms;
+  list-style:none ;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Bad Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-size: 1.6rem;
+  width:90vw;
+height:90vh;
+
+::selection{
+    background-color:rgb(141, 146, 161);
+    color:#fff;
+}
+}
+.body-login{
+    width:100vw;
+    height:100vh;
+    background-image: url('../../images/loginbackground.jpg');
+
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.body-signup{
+    width:100vw;
+    height:100vh;
+    /* background-image: url('../../images/signupbackground.jpg'); */
+    background-image: url('../../images/loginbackground.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.loginpage{
+    position: relative;
+}
+.div-welcome-tittle{
+position: absolute;
+left:55rem;
+top:15rem;
+font-size: 2.6rem;
+color:rgb(63, 64, 69);
+
+
+}
+
+.form1{
+
+    position: absolute;
+    left:55rem;
+    top:35rem;
+
+}
+input{
+    background-color: rgb(220, 221, 224);
+
+
+}
+.username-1 ,
+.pass-1{
+width:30rem;
+height:3.6rem;
+border:none;
+border-radius: 2rem;
+transition: 1s;
+
+}
+.username-1:hover ,.pass-1:hover{
+    border:1px solid rgb(84, 117, 145);
+    box-shadow:3px 3px 13px rgb(175, 170, 170);
+
+}
+.radio-btn{
+    margin:2rem 0;
+   display:flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   position: relative;
+   right:7.2rem;
+
+}
+.div1
+{
+    margin:0 2rem;
+}
+input:focus + label{
+    color:rgb(105, 136, 162);
+}
+
+.submit-1{
+    width:18rem;
+    height:5rem;
+    margin:2rem 0;
+    padding:1rem 6rem 1rem 6rem ;
+    position: absolute;
+    left:7rem;
+    background-color: rgb(73, 104, 132);
+    color:#fff;
+    border:none;
+    border-radius: 3.5rem;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: 1s;
+}
+.submit-1:hover{
+    background-color: rgb(125, 143, 158);
+    box-shadow:3px 3px 10px rgb(175, 170, 170);
+}
+.personal-info{
+    position: absolute;
+    left:20rem;
+    top:17rem;
+
+}
+input ,textarea{
+    background-color: rgb(220, 221, 224);
+
+
+}
+.username-2 ,
+.pass-2 ,
+.email ,
+.phone ,
+.f-name ,
+.l-name,
+.address-2
+{
+width:30rem;
+height:3.6rem;
+border:none;
+border-radius: 2rem;
+transition: 1s;
+}
+.textarea{
+    width:30rem;
+    height:20rem;
+    border:none;
+    border-radius: 2rem;
+    transition: 1s;
+    padding: 2rem;
+}
+.username-2:hover ,.pass-2:hover ,.email:hover ,.phone:hover ,.textarea:hover ,.f-name:hover ,.l-name:hover,.address-2:hover{
+    border:1px solid rgb(84, 117, 145);
+    box-shadow:3px 3px 13px rgb(175, 170, 170);
+
+}
+.health-info{
+    position: absolute;
+    left:58rem;
+    top:17rem;
+}
+.gender{
+    margin: 2rem;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+     justify-content: space-evenly;
+    position: relative;
+
+}
+input:focus +label{
+    color:rgb(105, 136, 162);
+}
+.age ,
+.weight ,
+.height{
+    width:30rem;
+height:3.6rem;
+border:none;
+border-radius: 2rem;
+transition: 1s;
+}
+.age:hover ,
+.weight:hover ,
+.height:hover{
+    border:1px solid rgb(84, 117, 145);
+    box-shadow:3px 3px 13px rgb(175, 170, 170);
+}
+.submit-2{
+    width:18rem;
+    height:5rem;
+    margin:2rem 0;
+    padding:1rem 6rem 1rem 6rem ;
+    position: absolute;
+    left:48rem;
+    top:60rem;
+    background-color: rgb(73, 104, 132);
+    color:#fff;
+    border:none;
+    border-radius: 3.5rem;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: 1s;
+}
+.submit-2:hover{
+    background-color: rgb(125, 143, 158);
+    box-shadow:3px 3px 10px rgb(175, 170, 170);
+}
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
